@@ -4,8 +4,6 @@ set -x
 
 msg_prefix="(vm)"
 
-cd fio-test || exit 1
-
 pass="passw0rd"
 eval "$(ssh-agent -s)"
 expect << EOF
