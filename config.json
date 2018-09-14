@@ -1,0 +1,75 @@
+{
+  "disknode": "/dev/vdb",
+  "disksize": 2,
+  "testGroup":
+  [
+    {
+      "testname": "ReadTest",
+      "testitem":
+      [
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test1",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 1,
+          "rwtype": "randread",
+          "blocksize": "4k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test2",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 128,
+          "rwtype": "randread",
+          "blocksize": "4k",
+          "runtime": 60,
+          "delay": 0
+        }
+      ]
+    },
+    {
+      "testname": "WriteTest",
+      "testitem":
+      [
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test1",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 1,
+          "rwtype": "randwrite",
+          "blocksize": "4k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test2",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 128,
+          "rwtype": "randwrite",
+          "blocksize": "4k",
+          "runtime": 60,
+          "delay": 0
+        }
+      ]
+    }
+  ]
+}

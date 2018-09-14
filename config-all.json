@@ -1,0 +1,406 @@
+{
+  "disknode": "/dev/vdb",
+  "disksize": 100,
+  "testGroup":
+  [
+    {
+      "testname": "ReadTest",
+      "testitem":
+      [
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test1",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 1,
+          "rwtype": "randread",
+          "blocksize": "4k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test2",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 128,
+          "rwtype": "randread",
+          "blocksize": "4k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test3",
+          "vm": 3,
+          "numjobs": 1,
+          "iodepth": 128,
+          "rwtype": "randread",
+          "blocksize": "4k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test4",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 1,
+          "rwtype": "randrw",
+          "rwmixread": 75,
+          "blocksize": "4k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test5",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 128,
+          "rwtype": "randrw",
+          "rwmixread": 75,
+          "blocksize": "4k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test6",
+          "vm": 3,
+          "numjobs": 1,
+          "iodepth": 128,
+          "rwtype": "randrw",
+          "rwmixread": 75,
+          "blocksize": "4k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test7",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 1,
+          "rwtype": "randread",
+          "blocksize": "8k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test8",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 128,
+          "rwtype": "randread",
+          "blocksize": "8k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test9",
+          "vm": 3,
+          "numjobs": 1,
+          "iodepth": 128,
+          "rwtype": "randread",
+          "blocksize": "8k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test10",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 1,
+          "rwtype": "randrw",
+          "rwmixread": 75,
+          "blocksize": "8k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test11",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 128,
+          "rwtype": "randrw",
+          "rwmixread": 75,
+          "blocksize": "8k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test12",
+          "vm": 3,
+          "numjobs": 1,
+          "iodepth": 128,
+          "rwtype": "randrw",
+          "rwmixread": 75,
+          "blocksize": "8k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test13",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 1,
+          "rwtype": "read",
+          "blocksize": "1m",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test14",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 16,
+          "rwtype": "read",
+          "blocksize": "1m",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test15",
+          "vm": 3,
+          "numjobs": 1,
+          "iodepth": 16,
+          "rwtype": "read",
+          "blocksize": "1m",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test16",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 1,
+          "rwtype": "rw",
+          "rwmixread": 75,
+          "blocksize": "1m",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test17",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 16,
+          "rwtype": "rw",
+          "rwmixread": 75,
+          "blocksize": "1m",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test18",
+          "vm": 3,
+          "numjobs": 1,
+          "iodepth": 16,
+          "rwtype": "rw",
+          "rwmixread": 75,
+          "blocksize": "1m",
+          "runtime": 60,
+          "delay": 0
+        }
+      ]
+    },
+    {
+      "testname": "WriteTest",
+      "testitem":
+      [
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test1",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 1,
+          "rwtype": "randwrite",
+          "blocksize": "4k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test2",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 128,
+          "rwtype": "randwrite",
+          "blocksize": "4k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test3",
+          "vm": 3,
+          "numjobs": 1,
+          "iodepth": 128,
+          "rwtype": "randwrite",
+          "blocksize": "4k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test4",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 1,
+          "rwtype": "randwrite",
+          "blocksize": "8k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test5",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 128,
+          "rwtype": "randwrite",
+          "blocksize": "8k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test6",
+          "vm": 3,
+          "numjobs": 1,
+          "iodepth": 128,
+          "rwtype": "randwrite",
+          "blocksize": "8k",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test7",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 1,
+          "rwtype": "write",
+          "blocksize": "1m",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test8",
+          "vm": 1,
+          "numjobs": 1,
+          "iodepth": 16,
+          "rwtype": "write",
+          "blocksize": "1m",
+          "runtime": 60,
+          "delay": 0
+        },
+        {
+          "address": 
+          [
+            "localhost"
+          ],
+          "name": "test9",
+          "vm": 3,
+          "numjobs": 1,
+          "iodepth": 16,
+          "rwtype": "write",
+          "blocksize": "1m",
+          "runtime": 60,
+          "delay": 0
+        }
+      ]
+    }
+  ]
+}
