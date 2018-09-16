@@ -4,6 +4,14 @@ set -x
 
 msg_prefix="(vm)"
 
+function extract_config {
+	echo "Extract config.json"
+	ARCHIVE=$(awk '/^__ARCHIVE_BELOW__/ {print NR + 1; exit 0; }' $0)
+	tail -n+$ARCHIVE $0 | tar xv
+}
+
+extract_config
+
 pass="passw0rd"
 eval "$(ssh-agent -s)"
 expect << EOF
@@ -173,3 +181,6 @@ do
 	(( group_iter = group_iter + 1 ))
 done
 
+exit 0
+
+__ARCHIVE_BELOW__
